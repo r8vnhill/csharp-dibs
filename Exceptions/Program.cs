@@ -1,3 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Exceptions;
 
-Console.WriteLine("Hello, World!");
+try
+{
+    FileReader.ReadConfigFile("config.json");
+}
+catch (FileNotFoundException ex)
+{
+    Console.WriteLine(ex.Message);
+}
+catch (IOException ex)
+{
+    Console.WriteLine(ex.Message);
+}
