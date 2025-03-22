@@ -10,13 +10,10 @@ public static class FileReader
         Console.WriteLine("Contenido del archivo:");
         Console.WriteLine(content);
     }
-    
+
     public static void ReadConfigFile(string filePath)
     {
-        if (!File.Exists(filePath))
-        {
-            throw new FileNotFoundException($"Configuration file not found: {filePath}");
-        }
+        if (!File.Exists(filePath)) throw new FileNotFoundException($"Configuration file not found: {filePath}");
         try
         {
             Console.WriteLine("Configuration loaded successfully.");

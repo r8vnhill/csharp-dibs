@@ -1,0 +1,10 @@
+﻿<Solution>
+  <Folder Name="/Fp/" />
+  <Folder Name="/Fp/Adt/">
+    <Project Path="Product\Product.csproj" Type="Classic C#" />
+  </Folder>
+  <Folder Name="/Intro/">
+    <Project Path="Exceptions\Exceptions.csproj" Type="Classic C#" />
+    <Project Path="OOP\OOP.csproj" Type="Classic C#" />
+  </Folder>
+</Solution>
